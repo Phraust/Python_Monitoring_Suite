@@ -53,7 +53,7 @@ def cls():
 
 def send_sms(MESSAGE):
 	TEXT = "\'"+MESSAGE+"\'"
-	call(['./SMS.py', PHONE, TEXT])
+	subprocess.call(['./SMS.py', PHONE, TEXT])
 
 # Checks live devices, returns how many are alive.
 
