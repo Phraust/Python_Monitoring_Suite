@@ -17,7 +17,7 @@ import time
 # USER VARIABLES #
 ##################
 
-PHONE = '(808)799-9280'  	# Phone Numnber to Message
+PHONE = '(123)456-7890'  	# Phone Numnber to Message
 
 HOST_IP = '127.0.0.1'		# IP of BFGMiner instance to monitor
 HOST_PORT = 4028		# Port # of BFGMiner to monitor
