@@ -27,12 +27,48 @@ REQUIREMENTS
 
 *[There is a fix](https://code.google.com/r/bwpayne-pygooglevoice-auth-fix/source/checkout) needed to get Google Voice working.*
 
-SETUP
------
+BFG_Monitor.py
+--------------
 
-Pretty self explanitory in the source comments, just look for the USER VARIABLES.
+Pretty self explanitory in the source comments, just look for the USER VARIABLES:
+
+* PHONE = Phone Number to SMS (eg: 9165217197)
+* HOST_IP = IP or HOST of BFGMiner instance to monitor (eg: localhost)
+* HOST_PORT = Port # of BFGMiner to monitor (eg: 4028)
+* HOST_DEVICES = Number of devices to monitor (eg: 16)
+* TIMEOUT = Time in seconds to refresh (eg: 10)
+
+BFG_Monitor.py requires SMS.py to be in the same directory.
 
 *Single SCs are seen as 16 devices, BitForce FPGA singles are seen as one device.*
+
+
+SMS.py
+------
+
+Stand-alone, this one can be run via python, or as an executable if CHMOD'ed.
+
+    python SMS.py phone-number 'message'
+    
+or:
+
+    chmod +x SMS.py
+    ./SMS.py phone-number 'message'
+    
+Needs two things passed to it:
+
+* phone-number = Phone Number to SMS (eg: 9165217197)
+* 'message' = Text to message. Must be wrapped in quotes if more than one word (eg: 'SERVER NEEDS HELP.')
+
+
+USB.py
+------
+
+On OSX Lion, will list all of the BFL SC devices I have plugged in as if I had run:
+
+    ls /dev/cu.usb*
+
+*This is a work in progress.*
 
 
 RUNNING
@@ -42,11 +78,12 @@ You'll need to chmod them to executable:
 
     chmod +x *.py
 
-You can them start them like:
+You can then start it like:
 
     ./BFG_Monitor.py
-    ./USB.py
-    ./SMS.py
+
+It'll refresh for every period you specify, and if the count of live devices is lower than the numbee you listed, it will SMS you until you fix it.
+
 
 BIG UPS
 -------
