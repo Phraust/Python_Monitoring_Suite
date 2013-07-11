@@ -6,7 +6,7 @@
 
 import subprocess
 
-DEV_LOC= 'ls /dev/cu.usb*'
+DEV_LOC= 'ls /dev/cu.usb*'    # Command needed to list your USB devices.  This is what I use for OSX.
 
 p = subprocess.Popen(DEV_LOC , shell=True , stdout=subprocess.PIPE , stderr=subprocess.PIPE)
 
