@@ -14,9 +14,9 @@ Ideally, I'd like it to be able to have it:
 
 So far, I've broken out the SMS Messaging (SMS.py) and USB lookup (USB.py) into their own individual scripts which can be called.
 
-I've also cleaned up the original BFGMonitor (BFG_Monitor.py), so it will work as is.
+I've also cleaned up the original BFGMonitor (BFG_Monitor.py), so it will work.  Just make sure you have all the scripts in the same directoy.
 
-*This is totally a work in progress, and am no where near finished.*
+*This is totally a work in progress, and no where near finished.*
 
 REQUIREMENTS
 ------------
