@@ -60,6 +60,7 @@ Needs two things passed to it:
 * phone-number = Phone Number to SMS (eg: 9165217197)
 * 'message' = Text to message. Must be wrapped in quotes if more than one word (eg: 'SERVER NEEDS HELP.')
 
+*If you are using BFG_Monitor.py, this needs to be CMOD'ed.*
 
 USB.py
 ------
