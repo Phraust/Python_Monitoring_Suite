@@ -2,17 +2,15 @@ Python Monitoring Suite [PMS]
 =============================
 
 I wanted to put together a suite of scripts for both local and remote hosts to monitor and report on the status of a miner.
-
-Ideally, I'd like it to be able to have it:
+So far, I've managed to get the following working:
 
 * Startup when the system boots, and let me know that it's up via an SMS.
-* Be able to locate and distinguish mining hardware on the USB chain.
-* Be able to startup BFGMiner and set it mining based on the devices present, and the configuration files available.
-* Be able to monitor the health of those mining units, restart BFGMiner if needed, and to SMS me if something has gone wrong.
+* Be able to startup BFGMiner and set it mining.
+* Be able to monitor whether BFGMiner has quit silently (which it has in the past), and if so, to text me and restart it.
 * Have a remote host monitor that the mining host is online and reachable (via whatever port I'd like), and to SMS me otherwise.
-* Have the mining host be able to write statistics to my remote hosts webserver, so that I can check up on the basic information whenever I'd like through my browser.
+* Have the mining host be able to write statistics to my remote hosts webserver, so that I can check up on the basic information whenever I'd like through my browser without having to login to whatever mining pool.
 
-*My OSX setup is working, I just need to document everything.*
+*This actually kinda works. I've been running it for the last few days, and it seems to be fine.*
 
 
 BIG UPS
