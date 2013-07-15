@@ -1,7 +1,7 @@
 Python Monitoring Suite [PMS]
 =============================
 
-These files are needed on a remote server to monitor the mining server.
+These files are used to remotely monitor your mining server, and for displaying statistics via a webpage.
 
 
 RemoteStatus.py
