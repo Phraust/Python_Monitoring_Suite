@@ -1,0 +1,59 @@
+<!--
+
+com.phraust.CheckBFG.plist
+
+#################
+# NOTES & USAGE #
+#################
+
+LaunchD requires .plist files to be made for any services you
+want to run.  There are tons of online requrces that go into 
+this with much greater detail.
+
+I just wanted to run scripts on recurring intervals with my
+default user, so the path fo rthis .plist location would be:
+
+~/Library/LaunchAgents/com.phraust.CheckBFG.plist
+
+You'll need to add this to LaunchD:
+
+launchctl load ~/Library/LaunchAgents/com.phraust.CheckBFG.plist
+
+Then you'll need to start it:
+
+launchctl start com.phraust.CheckBFG
+
+If you messed up, then you'll need to stop it, unload it, then
+load it and restart it again.
+
+Please research a little bit into this befor emessing with LaunchD.
+It's probably pretty easy to mess up your system this way.
+
+-->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+	<string>com.phraust.CheckBFG</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/path/to/CheckBFG.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartInterval</key>
+	<integer>300</integer>
+</dict>
+</plist>
+
+
+<!--
+#####################################
+#    Brought to you by Phraust Co.  #
+#   "Mining For A Better Tomorrow." #
+# 1nbTFZTFy8Wtbti3LhnLFZgd5YTBrXjaU #
+#####################################
+-->
