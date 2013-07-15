@@ -13,6 +13,11 @@ So far, I've managed to get the following working:
 *This actually kinda works. I've been running it for the last few days, and it seems to be fine.*
 
 
+Documentation
+-------------
+
+In-progress.  There are plenty of notes everywhere.
+
 BIG UPS
 -------
 
