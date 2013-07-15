@@ -18,8 +18,8 @@
 if /bin/ps -ef | /usr/bin/grep -v grep | /usr/bin/grep BFGMINER ; then
   exit 0
 else
-  /Users/phraust/Mining/StartBFG.sh
-  /Users/phraust/Scripts/SMS.py 1234567890 'BFGMINER RESTARTED.'
+  /path/to/StartBFG.sh
+  /path/to/SMS.py 1234567890 'BFGMINER RESTARTED.'
   exit 1
 fi
 
