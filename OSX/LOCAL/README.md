@@ -52,7 +52,8 @@ This is a simple shell script for starting up BFGMiner in a GNU screen instance.
 LaunchD/
 --------
 
-These files are required to use OSX's replacement for cron, LaunchD.
+These files are required to use LaunchD, OSX's replacement for cron.  It's a pain in the ass, so you might want to read up a little bit on it first.
+
 
 BIG UPS
 -------
