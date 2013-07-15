@@ -1,16 +1,11 @@
 Python Monitoring Suite [PMS]
 =============================
 
-Remote Files
-------------
-
 These files are needed on a remote server to monitor the mining server.
 
 
-Usage
------
-
-* RemoteStatus.py
+RemoteStatus.py
+---------------
 
 This is a python script that will try to connect to a remote host's port, and if it fails will send an SMS.
 
@@ -18,7 +13,9 @@ It can be used like this:
 
     ./RemoteStatus.py host:port phonenumber
     
-* HTML
+
+HTML/
+-----
 
 These are the files needed on the remote host's web server for parsing the STATS.php that gets written by the mining host.
 
