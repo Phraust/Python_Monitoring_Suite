@@ -3,7 +3,7 @@ OSX Python Monitoring Suite [PMS]
 
 I kinda put together a suite of scripts for both local and remote hosts to monitor and report on the status of an OSX miner, since I have a dedicated Mac Mini Server.
 
-So far, I've managed to get the following workingL
+So far, I've managed to get the following working:
 
 * Startup when the system boots, and let me know that it's up via an SMS.
 * Be able to startup BFGMiner and set it mining.
