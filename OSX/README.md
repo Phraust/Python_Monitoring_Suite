@@ -1,4 +1,4 @@
-OSX Python Monitoring Suite [PMS]
+OSX Python Monitoring Suite [OSX_PMS]
 =============================
 
 I kinda put together a suite of scripts for both local and remote hosts to monitor and report on the status of an OSX miner, since I have a dedicated Mac Mini Server.
